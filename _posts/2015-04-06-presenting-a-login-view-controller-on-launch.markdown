@@ -2,6 +2,7 @@
 layout: post
 title:  "Presenting a Login View Controller on Launch"
 date:   2015-04-06 00:16:59
+author: henry
 categories: ios
 ---
 I've struggled with login view controllers for a long time, or really any initial user flow that can vary depending on what is set. Setting a user login/registration view controller as the default root view controller seems wrong-- it should instead be a modal view controller that is only used sometimes. Taking this other approach results in a brief second where the modal is being presented. While it works, it isn't clean. A login view should simply be there when it is needed.

@@ -7,5 +7,19 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://codedge.io" # the base hostname & protocol for your site
 github_username:  codedge-dev
 
+authors:
+  henry:
+    name: Henry Popp
+    display_name: Henry Popp
+    email: henry@codedge.io
+  matthew:
+    name: Matthew Cocco
+    display_name: Matthew Cocco
+    email: matthew@codedge.io
+  tyler:
+    name: Tyler Hurst
+    display_name: Tyler Hurst
+    email: tyler@codedge.io
+
 # Build settings
 markdown: kramdown
