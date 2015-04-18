@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "darkerColor() UIColor Class Extension in Swift"
+title:  "Creating darkerColor() UIColor Class Extension in Swift"
 date:   2015-04-07 00:18:55
 author: henry
 categories: ios swift
 ---
 
 Swift's strict typing is great, but sometimes it can be a major source of frustration for developers used to the conventions of Objective-C. Take the case of the following code, an class extension of UIColor written in ObjC that returns a 20% darker version of the color that calls it.
-{% highlight objc %}
+
+{% highlight objective-c %}
 @implementation UIColor (UIColorAdditions)
 
 - (UIColor *)darkerColor {
