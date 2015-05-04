@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>darkerColor() UIColor Class Extension in Swift</title>
+    <title>Creating darkerColor() UIColor Class Extension in Swift</title>
     <meta name="description" content="Building awesome things, being edgy and stuff
 ">
 
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://codedge.io/ios/swift/2015/04/06/darkercolor-with-uicolor-class-extension.html">
+    <link rel="stylesheet" href="/blog//css/main.css">
+    <link rel="canonical" href="http://codedge.io/blog//ios/swift/2015/04/06/creating-darkercolor-with-uicolor-class-extension.html">
 </head>
 
 
@@ -21,7 +21,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/">Codedge</a>
+    <a class="site-title" href="/blog//">Codedge</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -35,7 +35,7 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/about/">About</a>
+          <a class="page-link" href="/blog//about/">About</a>
           
         
           
@@ -58,12 +58,12 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">darkerColor() UIColor Class Extension in Swift</h1>
+    <h1 class="post-title">Creating darkerColor() UIColor Class Extension in Swift</h1>
     <p class="post-meta">Apr 6, 2015 • Henry Popp</p>
   </header>
 
   <article class="post-content">
-    <p>Swift’s strict typing is great, but sometimes it can be a major source of frustration for developers used to the conventions of Objective-C. Take the case of the following code, an class extension of UIColor written in ObjC that returns a 20% darker version of the color that calls it.</p>
+    <p>Swift’s strict typing is great, but sometimes it can be a major source of frustration for developers used to the conventions of Objective-C. Take the case of the following code, a class extension of UIColor written in ObjC that returns a 20% darker version of the color that calls it.</p>
 
 <div class="highlight"><pre><code class="language-objective-c" data-lang="objective-c"><span class="k">@implementation</span> <span class="bp">UIColor</span> <span class="nl">(UIColorAdditions)</span>
 
@@ -95,7 +95,7 @@
 
 <p><em>So what’s going on here?</em></p>
 
-<p>Instead of passing a simple pointer, Swift has a strictly-typed <code>UnsafeMutablePointer</code> that requires you to manually allocate and deallocate memory (ick). There isn’t a lot of documentation on the matter, but the biggest thing to note is the use of <code>.alloc(4)</code> to instantiate it, where <code>4</code> is the number of words in memory, one for each of the four variables you need. Once instantiated, it can be passed into <code>getRed(,green:,blue:)</code> with the appropriate offset index to set it to the correct value, much like how the pointer was used in the objc example. </p>
+<p>Instead of passing a simple pointer, Swift has a strictly-typed <code>UnsafeMutablePointer</code> that requires you to manually allocate and deallocate memory (ick). There isn’t a lot of documentation on the matter, but the biggest thing to note is the use of <code>.alloc(4)</code> to instantiate it, where <code>4</code> is the number of words in memory, one for each of the four variables you need. Once instantiated, it can be passed into <code>getRed(,green:,blue:)</code> with the appropriate offset index to set it to the correct value, much like how the pointer was used in the objc example.</p>
 
 <p>As in the days before Automatic Reference Counting, this pointer must be deallocated when you’re done with it or else memory will leak. Also note, it’s important to call <code>destroy()</code> before <code>dealloc(4)</code>. <code>destroy()</code> returns it to a null pointer, while <code>dealloc(4)</code> frees up your memory.</p>
 

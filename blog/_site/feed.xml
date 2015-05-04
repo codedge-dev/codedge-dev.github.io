@@ -4,15 +4,15 @@
     <title>Codedge</title>
     <description>Building awesome things, being edgy and stuff
 </description>
-    <link>http://codedge.io/</link>
-    <atom:link href="http://codedge.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Apr 2015 20:03:12 -0500</pubDate>
-    <lastBuildDate>Fri, 17 Apr 2015 20:03:12 -0500</lastBuildDate>
-    <generator>Jekyll v2.4.0</generator>
+    <link>http://codedge.io/blog//</link>
+    <atom:link href="http://codedge.io/blog//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 03 May 2015 21:09:58 -0500</pubDate>
+    <lastBuildDate>Sun, 03 May 2015 21:09:58 -0500</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>darkerColor() UIColor Class Extension in Swift</title>
-        <description>&lt;p&gt;Swift’s strict typing is great, but sometimes it can be a major source of frustration for developers used to the conventions of Objective-C. Take the case of the following code, an class extension of UIColor written in ObjC that returns a 20% darker version of the color that calls it.&lt;/p&gt;
+        <title>Creating darkerColor() UIColor Class Extension in Swift</title>
+        <description>&lt;p&gt;Swift’s strict typing is great, but sometimes it can be a major source of frustration for developers used to the conventions of Objective-C. Take the case of the following code, a class extension of UIColor written in ObjC that returns a 20% darker version of the color that calls it.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-objective-c&quot; data-lang=&quot;objective-c&quot;&gt;&lt;span class=&quot;k&quot;&gt;@implementation&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;UIColor&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;(UIColorAdditions)&lt;/span&gt;
 
@@ -44,15 +44,15 @@
 
 &lt;p&gt;&lt;em&gt;So what’s going on here?&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Instead of passing a simple pointer, Swift has a strictly-typed &lt;code&gt;UnsafeMutablePointer&lt;/code&gt; that requires you to manually allocate and deallocate memory (ick). There isn’t a lot of documentation on the matter, but the biggest thing to note is the use of &lt;code&gt;.alloc(4)&lt;/code&gt; to instantiate it, where &lt;code&gt;4&lt;/code&gt; is the number of words in memory, one for each of the four variables you need. Once instantiated, it can be passed into &lt;code&gt;getRed(,green:,blue:)&lt;/code&gt; with the appropriate offset index to set it to the correct value, much like how the pointer was used in the objc example. &lt;/p&gt;
+&lt;p&gt;Instead of passing a simple pointer, Swift has a strictly-typed &lt;code&gt;UnsafeMutablePointer&lt;/code&gt; that requires you to manually allocate and deallocate memory (ick). There isn’t a lot of documentation on the matter, but the biggest thing to note is the use of &lt;code&gt;.alloc(4)&lt;/code&gt; to instantiate it, where &lt;code&gt;4&lt;/code&gt; is the number of words in memory, one for each of the four variables you need. Once instantiated, it can be passed into &lt;code&gt;getRed(,green:,blue:)&lt;/code&gt; with the appropriate offset index to set it to the correct value, much like how the pointer was used in the objc example.&lt;/p&gt;
 
 &lt;p&gt;As in the days before Automatic Reference Counting, this pointer must be deallocated when you’re done with it or else memory will leak. Also note, it’s important to call &lt;code&gt;destroy()&lt;/code&gt; before &lt;code&gt;dealloc(4)&lt;/code&gt;. &lt;code&gt;destroy()&lt;/code&gt; returns it to a null pointer, while &lt;code&gt;dealloc(4)&lt;/code&gt; frees up your memory.&lt;/p&gt;
 
 &lt;p&gt;Most of the time you will not have to use &lt;code&gt;UnsafeMutablePointer&lt;/code&gt; for anything. It exists primarily to ensure compatibility with some of the older Cocoa methods that expect pointers to be passed in. As the name implies, they’re designed to be everything Swift is not: unsafe.&lt;/p&gt;
 </description>
         <pubDate>Mon, 06 Apr 2015 19:18:55 -0500</pubDate>
-        <link>http://codedge.io/ios/swift/2015/04/06/darkercolor-with-uicolor-class-extension.html</link>
-        <guid isPermaLink="true">http://codedge.io/ios/swift/2015/04/06/darkercolor-with-uicolor-class-extension.html</guid>
+        <link>http://codedge.io/blog//ios/swift/2015/04/06/creating-darkercolor-with-uicolor-class-extension.html</link>
+        <guid isPermaLink="true">http://codedge.io/blog//ios/swift/2015/04/06/creating-darkercolor-with-uicolor-class-extension.html</guid>
         
         
         <category>ios</category>
@@ -104,8 +104,8 @@
 &lt;p&gt;And thats it! No more modal presentations of signup views. It simply works!&lt;/p&gt;
 </description>
         <pubDate>Sun, 05 Apr 2015 19:16:59 -0500</pubDate>
-        <link>http://codedge.io/ios/2015/04/05/presenting-a-login-view-controller-on-launch.html</link>
-        <guid isPermaLink="true">http://codedge.io/ios/2015/04/05/presenting-a-login-view-controller-on-launch.html</guid>
+        <link>http://codedge.io/blog//ios/2015/04/05/presenting-a-login-view-controller-on-launch.html</link>
+        <guid isPermaLink="true">http://codedge.io/blog//ios/2015/04/05/presenting-a-login-view-controller-on-launch.html</guid>
         
         
         <category>ios</category>
