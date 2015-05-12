@@ -159,7 +159,7 @@ main {
 }
 /* Slide 1 */
 /*#cover-slide .bcg {background: none; background-color: #222; text-align: center}*/
-#cover-slide .bcg {background-image:url('../img/whiteboard-blur.jpg')}
+#cover-slide .bcg {background-image:url('../img/whiteboard-blur-low-res.jpg')}
 
 /* Slide 2 */
 #header-slide .bcg {background: none; background-color: #000; height: 250px; text-align: center}
@@ -169,7 +169,7 @@ main {
 #slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
 
 #what-we-do-slide {position: relative;}
-#what-we-do-slide .bcg {background-image:url('../img/laptop-dark.jpg')}
+#what-we-do-slide .bcg {background-image:url('../img/laptop-dark-code.jpg')}
 /*#what-we-do-slide .bcg2 {background-image:url('../img/laptop-dark.jpg'); position: fixed; bottom: 0; left: 0; z-index: 1}*/
 /*#what-we-do-slide .bcg {background: none; background-color: #222; text-align: center}*/
 
@@ -182,8 +182,8 @@ main {
 #slide-4 .bcg {background: none; background-color: #000; height: 200px; text-align: center}
 
 #meet-the-team-slide {position: relative;}
-#meet-the-team-slide .bcg {background-image:url('../img/129-blur.jpg')}
-#meet-the-team-slide .bcg2 {background-image:url('../img/129-blur.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1}
+#meet-the-team-slide .bcg {background-image:url('../img/129-blur-low-res.jpg')}
+#meet-the-team-slide .bcg2 {background-image:url('../img/129-blur-low-res.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1}
 #meet-the-team-slide .bcg3 {background-image:url('../img/codedge-right.png'); z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2}
 
 /*
