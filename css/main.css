@@ -117,12 +117,12 @@ body {
 
 a {
   text-decoration: none;
-  color: #ff0000;
+  color: #00d9ff;
 }
 
 a:visited {
   text-decoration: none;
-  color: #ff0000;
+  color: #00d9ff;
 }
 
 .no-js {
@@ -198,37 +198,54 @@ main {
 /*#contact-slide .bcg2 {background-image:url('../img/codedge-blur.png'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1}
 */
 
+#menubar {
+  width: 100%;
+  background: none; 
+  background-color: #000; 
+  height: 50px; 
+  text-align: 
+  center; z-index: 3
+}
+
+#menubar a {
+  color: #fff;
+  /*color: #00d9ff;*/
+  padding-right: 20px
+}
+
+#menubar a:hover {
+  color: #ffdd00;
+}
+
 .circular-henry {
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
+	width: 250px;
+	height: 250px;
+	border-radius: 125px;
+	-webkit-border-radius: 125px;
+	-moz-border-radius: 125px;
 	background: url('../img/henry.jpg') no-repeat;
-	display: inline-block;
 }
 .circular-tyler {
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
+	width: 250px;
+	height: 250px;
+	border-radius: 125px;
+	-webkit-border-radius: 125px;
+	-moz-border-radius: 125px;
 	background: url('../img/tyler.jpg') no-repeat;
-	display: inline-block;
 }
 .circular-matthew {
-	width: 300px;
-	height: 300px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
+	width: 250px;
+	height: 250px;
+	border-radius: 125px;
+	-webkit-border-radius: 125px;
+	-moz-border-radius: 125px;
 	background: url('../img/matthew.jpg') no-repeat;
-	display: inline-block;
 }
 
 .teamMember {
-  display: inline-block;
   width: 25%;
+  vertical-align: top;
+  display: inline-block;
 }
 
 .teamMember h2 {
@@ -237,9 +254,11 @@ main {
 
 .teamMember p {
   color: #fff;
+  width: 90%;
 }
 
 .teamContainer {
+  vertical-align: top;
   display: inline-block;
   width: 100%;
   margin: 0 auto;
@@ -426,7 +445,7 @@ main {
 
     a,
     a:visited {
-        color: #ff0000;
+        color: ##00d9ff;
         text-decoration: none;
     }
 
