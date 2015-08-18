@@ -52,6 +52,7 @@ li {display:inline;}
   text-align: center;
   color: #fff;
   position: absolute;
+  width: 100%;
   left: 50%;
   top: 15%;
   -webkit-transform: translate(-50%, -50%);
@@ -106,7 +107,6 @@ li {display:inline;}
 }
 
 .parallax {
-  height: 500px; /* fallback for older browsers */
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
