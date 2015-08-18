@@ -1,0 +1,230 @@
+/* 
+	codedge dot css / 2015 June 20
+	matthew at codedge dot io
+*/
+
+@import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic);
+
+html, body, h1, h2, h3, h4 {
+	font-family:"RobotoDraft";
+}
+
+/* </3 styled lists */
+ul {list-style: none;}
+li {display:inline;}
+
+/* begin title-medium-up styles */
+
+.title-medium-up {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	display: table;
+	vertical-align: middle;
+	background-image:url(../img/code-blur.png);
+	background-size: cover;
+}
+
+.title-medium-up div {
+	display: table-cell;
+	vertical-align: middle;
+	padding-bottom:1rem;
+	font-size: 10rem;
+	height: 100%;
+	/*font-size: 72rem;*/
+	text-align: center;
+	width:50%;
+}
+
+.title-medium-up img {
+	background-size:100%;
+	background-color: black;
+	display:inline-block;
+	text-align: left;
+}
+
+.we-are-codedge-text h1 {
+	font-size:9.5rem;
+	margin-right:2rem;
+	text-align: right;
+	padding-bottom: 0.5rem;
+	color:white;
+}
+
+.codedge-logo-container {
+	background-color: black;
+	height:100%;
+}
+
+.contact-medium-up {
+	position:absolute;
+	bottom:0;
+	left:0;
+	height:4rem;
+	/*display:table;
+	vertical-align: middle;*/
+	background-color: rgba(0,0,0,0.8);
+	width:50%;
+}
+
+.contact-medium-up ul {
+	/*display:table-cell;
+	vertical-align: middle;*/
+	padding:1rem;
+}
+
+.title-small {
+	width: 100%;
+	height: 92%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	display: table;
+	vertical-align: middle;
+	background-image: url(../img/code-blur.png);
+	background-size:cover;
+}
+
+.title-small h1 {
+	color:white;
+	display:table-cell;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 4rem;
+}
+
+.title-small img {
+	background-color: black;
+}
+
+.contact-small {
+	height:10%;
+	padding-top:0.5rem;
+	background-color: black;
+}
+
+.contact-info li {
+	margin:1rem 0.5rem 1rem 0.5rem;
+	font-size:1.5rem;
+}
+
+/* this media query swaps medium-up 
+   and small titles at the 40em breakpoint */
+@media all and (max-width: 40em) {
+	.title-medium-up, .contact-medium-up {
+		display:none;
+	}
+	.title-small, .contact-small {
+		display:all;
+	}
+	.contact-info {
+		text-align:center;
+	}
+	.contact-info i, .contact-info li {
+		margin:0.1rem;
+		/*padding:0.25rem;*/
+	}
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	.title-medium-up h1 {
+		font-size:5rem;
+	}
+}
+
+@media all and (min-width:40.063em) {
+	.title-medium-up, .contact-medium-up {
+		display:all;
+	}
+	.title-small, .contact-small {
+		display:none;
+	}
+}
+
+.who-are-we {
+	text-align:center;
+	height: 75%;
+	background-image:url(../img/laptop-dark-code.jpg);
+	background-size:cover;
+	color:white;
+	padding-top:15%;
+}
+
+.transleucent-background {
+	padding:2rem;
+	width:100%;
+	background-color: rgba(0,0,0,0.5)
+}
+
+.who-are-we h2 {
+	color:white;
+}
+
+.boutique {
+	font-weight:bold;
+	line-height:0.5rem;
+	margin:0;
+	padding:0;
+}
+
+.small {
+	font-size:1rem;
+	line-height:0.5rem;
+	margin:0;
+	padding:0;
+}
+
+.large {
+	font-size:3rem;
+}
+
+/* meet the team section */
+
+.meet-the-team {
+	padding-top:2rem;
+	text-align:center;
+	background-image: url(../img/graphy.png);
+	background-repeat:repeat;
+}
+
+
+.employee-title {
+	text-align: center;
+}
+
+/* we realize ideas section */
+
+.we-realize-ideas {
+	padding-top:2rem;
+	text-align: center;
+	background-image: url(../img/noisy_grid_lightblue.png);
+	background-repeat:repeat;
+}
+
+.we-realize-ideas p {
+	font-weight:700;
+	font-size:1.2rem;
+}
+
+.get-in-touch {
+	margin-top:1rem;
+}
+
+h3.name {
+	text-align: center;
+	font-size:2rem;
+	margin:auto;
+	margin-top: 1rem;
+	background-color:rgba(0,0,0,0.3);
+	z-index:2;
+	max-width:320px;
+	padding: 1rem;
+
+}
+
+img.profile {
+	margin-top:1rem;
+	border-radius:150px;
+}
