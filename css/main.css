@@ -1,12 +1,12 @@
 @font-face {
 	font-family: 'Lato-Light';
-	src: url('dist/Lato-Light.eot?#iefix') format('embedded-opentype'), 
-	     url('dist/Lato-Light.woff') format('woff'), 
-	     url('dist/Lato-Light.ttf')  format('truetype');
+	src: url('../dist/Lato-Light.eot?#iefix') format('embedded-opentype'), 
+	     url('../dist/Lato-Light.woff') format('woff'), 
+	     url('../dist/Lato-Light.ttf')  format('truetype');
   }
 
 html, body, h1, h2, h3, h4 {
-	font-family:"Lato-Light";
+  font-family:"Lato-Light";
   color: #fff;
 }
 
